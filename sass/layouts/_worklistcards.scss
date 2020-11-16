@@ -4,15 +4,16 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
 
-  .work-list .link {
-    text-decoration: none;
-    position: relative;
-  }
+.work-list .link {
+  text-decoration: none;
+  position: relative;
 
-  &:hover {
-    color: #2f303a;
-  }
+  // &:hover {
+  //   color: #2f303a;
+  //   outline: 3px solid green;
+  // }
 
   &:hover,
   &:focus {
@@ -24,10 +25,9 @@
     transform: translateY(-100%);
   }
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+  // &:focus {
+  //   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  // }
 
   &:hover .discr,
   &:focus .discr {
@@ -42,7 +42,7 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  text-decoration: none;
+
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -88,8 +88,12 @@
 .work-list .item {
   margin-left: 30px;
   margin-top: 30px;
-
   width: calc(100% / 3 - 30px);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .work-list .text-card {

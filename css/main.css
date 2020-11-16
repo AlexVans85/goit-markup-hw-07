@@ -34,6 +34,10 @@
   border-radius: 2px;
 }
 
+.site-nav .link.current {
+  color: #2196f3;
+}
+
 .site-nav .item:last-child {
   margin-right: 0;
 }
@@ -130,6 +134,7 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
 }
 
 .hero-title {
@@ -200,7 +205,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  margin-left: 30px;
+  margin-left: 10px;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -275,6 +280,10 @@ img {
 
 .policy-link {
   color: #2196f3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .customer-checkbox {
@@ -351,6 +360,7 @@ img {
 .exmpls {
   display: flex;
   margin-left: -30px;
+  margin-top: -30px;
   flex-wrap: wrap;
 }
 
@@ -586,7 +596,7 @@ img {
 .section-title-footer {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 143;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -638,29 +648,21 @@ img {
   letter-spacing: 0.06em;
 }
 
-.work-list .title .work-list .link {
+.work-list .link {
   text-decoration: none;
   position: relative;
 }
 
-.work-list .title:hover {
-  color: #2f303a;
-}
-
-.work-list .title:hover, .work-list .title:focus {
+.work-list .link:hover, .work-list .link:focus {
   transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-list .title:hover, .work-list .title:focus {
+.work-list .link:hover, .work-list .link:focus {
   transform: translateY(-100%);
 }
 
-.work-list .title:hover, .work-list .title:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.work-list .title:hover .discr,
-.work-list .title:focus .discr {
+.work-list .link:hover .discr,
+.work-list .link:focus .discr {
   transform: translateY(-100%);
 }
 
@@ -671,7 +673,6 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  text-decoration: none;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -715,6 +716,10 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   width: calc(100% / 3 - 30px);
+}
+
+.work-list .item:hover, .work-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-list .text-card {
